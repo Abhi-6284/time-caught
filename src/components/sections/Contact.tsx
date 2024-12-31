@@ -25,7 +25,7 @@ export default function Contact() {
         >
           <h1 className="text-5xl font-bold text-center mb-12">Get in Touch</h1>
           <p className="text-xl text-center mb-8">
-            Have a project in mind or just want to say hello? I'd love to hear from you!
+            Have a project in mind or just want to say hello? I&#39;d love to hear from you!
           </p>
           <motion.form
             className="space-y-6"
