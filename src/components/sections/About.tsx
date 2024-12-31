@@ -23,7 +23,7 @@ export default function About() {
         >
           <h1 className="text-5xl font-bold mb-8">About Me</h1>
           <motion.p className="text-xl mb-8" style={{ y }}>
-            I'm a passionate photographer and video editor with over 10 years of experience. 
+            I&#39;m a passionate photographer and video editor with over 10 years of experience. 
             My work focuses on capturing the beauty of nature and the essence of human emotions. 
             Through my lens, I strive to tell compelling stories and create visually stunning content.
           </motion.p>
@@ -35,10 +35,10 @@ export default function About() {
           />
           <motion.p className="text-lg mb-8" style={{ y }}>
             My journey in photography began when I was just a teenager, captivated by the way a single image could tell a powerful story. 
-            Since then, I've honed my skills in both still photography and video production, always pushing the boundaries of my creativity.
+            Since then, I&#39;ve honed my skills in both still photography and video production, always pushing the boundaries of my creativity.
           </motion.p>
           <motion.p className="text-lg" style={{ y }}>
-            When I'm not behind the camera, you can find me exploring new locations for my next shoot, experimenting with cutting-edge editing techniques, 
+            When I&#39;m not behind the camera, you can find me exploring new locations for my next shoot, experimenting with cutting-edge editing techniques, 
             or mentoring aspiring photographers. I believe in the power of visual storytelling to inspire, educate, and bring about positive change in the world.
           </motion.p>
         </motion.div>
