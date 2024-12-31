@@ -103,7 +103,7 @@ export default function Portfolio() {
               whileTap={{ scale: 0.95 }}
               layout
             >
-              <MagicCard className="relative overflow-hidden rounded-lg shadow-lg border *:w-full">
+              <MagicCard className="relative overflow-hidden rounded-lg shadow-lg border *:w-full" gradientColor={"#D9D9D955"}>
                 {item.type === "image" ? (
                   <Image
                     height={500}
