@@ -8,14 +8,14 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <video
+      {/* <video
         autoPlay
         loop
         muted
         className="absolute w-full h-full object-cover"
       >
         <source src="/hero-background.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       {/* <FlickeringGrid
         className="z-0 absolute w-full h-full object-cover inset-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
         squareSize={4}
