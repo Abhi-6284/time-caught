@@ -37,7 +37,7 @@ export default function Hero() {
         <h1 className="text-5xl font-bold text-white mb-4">
           Capturing Moments, Creating Art
         </h1>
-        <p className="text-xl mb-8">Photography & Video Editing Portfolio</p>
+        <p className="text-xl mb-8 text-white">Photography & Video Editing Portfolio</p>
         <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link
             href="#"

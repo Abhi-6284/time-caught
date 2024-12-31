@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -29,14 +30,14 @@ export default function Header() {
   return (
     <motion.header
       className={`fixed w-full z-50 transition-colors duration-300 ${
-        scrolled || mobileMenuOpen ? 'bg-white shadow-md' : 'bg-transparent'
+        scrolled || mobileMenuOpen ? 'bg-white shadow-md' : 'bg-transparent text-white'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-gray-800">
+        <Link href="/" className={cn("text-2xl font-bold", scrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white')}>
           Time Caught
         </Link>
         <nav className="hidden md:block">
@@ -45,7 +46,7 @@ export default function Header() {
               <li key={item.href}>
                 <Link 
                   href={item.href} 
-                  className={`text-gray-600 hover:text-gray-900 ${pathname === item.href ? 'font-bold' : ''}`}
+                  className={cn(scrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white', pathname === item.href ? 'font-bold' : '')}
                 >
                   {item.label}
                 </Link>
@@ -73,7 +74,7 @@ export default function Header() {
               <li key={item.href}>
                 <Link 
                   href={item.href} 
-                  className={`text-gray-600 hover:text-gray-900 ${pathname === item.href ? 'font-bold' : ''}`}
+                  className={cn(scrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white', pathname === item.href ? 'font-bold' : '')}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
