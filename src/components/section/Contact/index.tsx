@@ -19,7 +19,7 @@ export default function Contact() {
           >
             <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Let's discuss your photography needs and create something beautiful together.
+              {"Let's discuss your photography needs and create something beautiful together."}
             </p>
           </motion.div>
 

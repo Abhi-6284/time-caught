@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-            Capturing Life's Beautiful Moments
+            {"Capturing Life's Beautiful Moments"}
           </h1>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
             Professional photography services that tell your story through

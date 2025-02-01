@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Services() {
   const services = [
@@ -76,7 +77,9 @@ export default function Services() {
                 className="bg-background rounded-lg overflow-hidden shadow-lg"
               >
                 <div className="aspect-video relative">
-                  <img
+                  <Image
+                    height={200}
+                    width={200}
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover"
